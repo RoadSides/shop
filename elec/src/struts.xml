@@ -39,6 +39,9 @@
 					<result name="alermZD">
 							/WEB-INF/page/menu/alermZD.jsp
 					</result>
+					<result name="error"  >
+							/WEB-INF/page/menu/index.jsp
+					</result>
 			</action>
 			<!-- 待办事宜 -->
 			<action name="elecCommonMsgAction_*"  class="cn.itcast.elec.web.action.ElecCommonMsgAction"  method="{1}">

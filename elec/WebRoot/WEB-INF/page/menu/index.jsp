@@ -50,7 +50,8 @@ FORM {
 				<td align=center background="${pageContext.request.contextPath}/images/index.jpg">
 				<table border="0" width="98%" id="table3" height="412" cellspacing="0" cellpadding="0">
 					<tr height=122>
-						<td colspan=2></td>
+						<td colspan=2>
+						</td>
 					</tr>
 					<tr>
 						<td height="313" width="73%"></td>
@@ -87,5 +88,6 @@ FORM {
 	</tr>
 </table>
 </form>
+		<div  style="color:red;font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:fielderror  name="error"></s:fielderror></div>
 </body>
 </html>

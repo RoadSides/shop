@@ -25,7 +25,7 @@ eval("document.location='"+action+"'");
 		
 		<table border="0" width="60%" id="table2" cellspacing="0" cellpadding="0">
 			<tr>
-				<td width="39" height="34"><img border="0" src="images/zhuyi.jpg" width="39" height="34"></td>
+				<td width="39" height="34"><img border="0" src="${pageContext.request.contextPath}/images/zhuyi.jpg" width="39" height="34"></td>
 				<td style="word-break:break-all"><font face="黑体" size="4">
                        
             

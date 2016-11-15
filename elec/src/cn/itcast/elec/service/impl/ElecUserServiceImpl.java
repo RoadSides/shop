@@ -178,6 +178,18 @@ public class ElecUserServiceImpl implements IElecUserService {
 			}
 			return checkflag;
 		}
+
+		@Override
+		public ElecUser findElecUserByLogonName(String name) {
+			String hqlWhere=" and o.logonName=?";
+			Object[] params={name};
+			List<ElecUser>  list=elecUserDao.findCollectionByConditionNoPage(ElecUser.class, hqlWhere, params, null);
+			ElecUser elecUser=null;
+			if(list!=null&&list.size()>0){
+				elecUser=list.get(0);
+			}
+			return elecUser;
+		}
 		
 		
 }	

@@ -2,6 +2,7 @@ package cn.itcast.elec.service;
 
 import java.util.List;
 
+import cn.itcast.elec.domain.ElecUser;
 import cn.itcast.elec.web.vo.ElecUserForm;
 
 public interface IElecUserService {
@@ -16,4 +17,6 @@ public interface IElecUserService {
 		void deleteElecUser(ElecUserForm elecUserForm);
 
 		String checkLogonName(String logonName);
+
+		ElecUser findElecUserByLogonName(String name);
 }
