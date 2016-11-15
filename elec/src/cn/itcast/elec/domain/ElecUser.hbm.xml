@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+   		<class name="cn.itcast.elec.domain.ElecUser"  table="elec_user">
+   				<id name="userID">
+   					<generator class="uuid"></generator>
+   				</id>
+   				<property name="jctID" column="jctID"></property>
+				<property name="userName" column="userName"></property>
+				<property name="logonName" column="logonName"></property>
+				<property name="logonPwd" column="logonPwd"></property>
+				<property name="sexID" column="sexID"></property>
+				<property name="birthday" column="birthday"  type="date"></property>
+				<property name="address" column="address"></property>
+				<property name="contactTel" column="contactTel"></property>
+				<property name="email" column="email"></property>
+				<property name="mobile" column="mobile"></property>
+				<property name="isDuty"  column="isDuty"></property>
+				<property name="onDutyDate"  column="onDutyDate" type="date"></property>
+				<property name="offDutyDate"  column="offDutyDate" type="date"></property>
+				<property name="remark"  column="remark"></property>
+   		</class>
+   </hibernate-mapping>
